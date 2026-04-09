@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <title>Авторизация...</title>
   <script>
-    // DA вернёт токен в hash: #access_token=...&token_type=Bearer&...
-    // Перенаправляем на главную, сохраняя hash
     const hash = window.location.hash;
     if (hash) {
       window.location.replace('../' + hash);
