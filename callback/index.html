@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Авторизация...</title>
+  <script>
+    // DA вернёт токен в hash: #access_token=...&token_type=Bearer&...
+    // Перенаправляем на главную, сохраняя hash
+    const hash = window.location.hash;
+    if (hash) {
+      window.location.replace('../' + hash);
+    } else {
+      document.body.textContent = 'Ошибка авторизации — токен не получен.';
+    }
+  </script>
+</head>
+<body>Перенаправление...</body>
+</html>
